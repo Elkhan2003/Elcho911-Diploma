@@ -1,0 +1,285 @@
+.content {
+    margin-top: 55px;
+}
+
+.about__tabs {
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+hr {
+    margin: 10px 0px;
+}
+
+/* ! Home */
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.сollege {
+    padding: 15px 35px;
+    background-color: rgb(231, 231, 231);
+    box-shadow: 0px 5px 10px black;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.sub__title {
+    text-align: center;
+}
+
+.sup__title {
+    margin: 220px 0px 180px 0px;
+    text-align: center;
+}
+
+.sup__title h1 {
+    font-weight: 700;
+}
+
+.сollege__text {
+    display: flex;
+    justify-content: center;
+}
+
+.сollege__footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 125px;
+}
+
+@media (max-width: 768px) {
+    .sub__title h5 {
+        font-size: 14px;
+    }
+
+    .sup__title {
+        margin: 110px 0px 80px 0px;
+    }
+
+    .sup__title h1 {
+        font-size: 23px;
+    }
+
+    .sup__title h4 {
+        font-size: 16px;
+    }
+
+    .сollege__text h5 {
+        font-size: 13px;
+    }
+
+    .сollege__footer {
+        margin-top: 70px;
+    }
+
+    .сollege__footer h5 {
+        font-size: 15px;
+    }
+}
+
+/* ! blog */
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 0px 25px 30px 25px;
+}
+
+/* ! contacts */
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contacts__suptitle {
+    font-size: 31px;
+    text-transform: uppercase;
+    color: #1f9fba;
+}
+
+@media (max-width: 768px) {
+    .contacts__suptitle {
+        font-size: 24px;
+    }
+}
+
+.contacts__list {
+    max-width: 800px;
+}
+
+.contact__text {
+    margin: 25px 0px;
+    font-size: 29px;
+}
+
+@media (max-width: 768px) {
+    .contact__text {
+        font-size: 18px;
+    }
+}
+
+.contact__text a {
+    color: #15c1e5;
+    text-decoration: none;
+    transition: .7s;
+}
+
+.contact__text a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+.contact__text strong {
+    color: #535248;
+}
+
+.contact__text p {
+    color: #535248;
+}
+
+.contact__text span {
+    color: #ff0000;
+}
+
+/* ? contact card */
+.card__item {
+    width: 100%;
+}
+
+.card__inner {
+    position: relative;
+    background-color: #95e1d3;
+}
+
+.card__inner:hover .card__img {
+    transform: translate3d(-10px, -10px, 0);
+}
+
+.card__inner:hover .card__img img {
+    opacity: .1;
+}
+
+.card__inner:hover .card__text {
+    opacity: 1;
+}
+
+.card__img {
+    background: linear-gradient(to bottom, #398fff, #4ef9ff);
+
+    transition: transform .2s linear;
+}
+
+.card__img img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    transition: opacity .1s linear;
+}
+
+.card__text {
+    width: 100%;
+
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    opacity: 0;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 2;
+    transform: translate3d(0, -50%, 0);
+
+    transition: opacity .2s linear;
+}
+
+.card__info {
+    margin-top: 20px;
+
+    text-align: center;
+}
+
+.card__name {
+    margin-bottom: 5px;
+
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.card__prof {
+    font-size: 18px;
+    font-weight: 700;
+    font-style: italic;
+    color: #999;
+
+    margin-bottom: 20px;
+}
+
+/* ? Social card */
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+.social__item {
+    width: 55px;
+    height: 55px;
+    padding: 12px 10px;
+
+    background-color: #fce38a;
+    border-right: 1px solid #f38181;
+
+    font-size: 30px;
+    text-decoration: none;
+    color: #f38181;
+    line-height: 1;
+
+    transition: background .1s linear, color .1s linear;
+}
+
+.social__item:last-child {
+    border-right: 0;
+}
+
+.social__item:hover {
+    color: #fff;
+    background-color: #005b85;
+}
+
+
+/* ! map */
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    max-height: 640px;
+}
+
+.sites__url {
+    display: flex;
+    justify-content: center;
+}
+
+.site__url {
+    width: 100%;
+    height: 650px;
+}
+
+/* @media (max-width: 768px) {
+    .site__url {
+        height: 645px;
+    }
+} */
