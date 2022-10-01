@@ -21,7 +21,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 import css from "./Header.module.css";
-import logo from "../img/atom.png";
+import logo from "../img/atom.svg";
 
 import { Home } from "../../Pages/Home";
 import { Blog } from "../../Pages/Blog";
