@@ -35,7 +35,7 @@ export const Header = () => {
                                     height="30"
                                     className="d-inline-block align-top"
                                 />{' '}
-                                PascalABC
+                                Elcho
                             </Navbar.Brand>
                             <Navbar.Toggle aria-controls="navbarScroll" />
                             <Navbar.Collapse id="navbarScroll">
