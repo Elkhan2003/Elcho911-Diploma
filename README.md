@@ -1,2 +1,2 @@
 # Link
-https://elkhan2003.github.io/test-react-single-page/
+https://elkhan2003.github.io/elcho-diploma/
