@@ -74,7 +74,7 @@ export const App = () => {
                         role="status"
                         aria-hidden="true"
                       />
-                      <a className='load__url' href="https://elcho.ru/">
+                      <a className='load__url' href="https://elkhan2003.github.io/test-react-single-page/">
                         <span className='loading__color'>Пожалуйста подождите...</span>
                       </a>
                     </Button>
