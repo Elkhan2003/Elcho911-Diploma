@@ -1,7 +1,7 @@
 {
   "name": "my-app",
   "version": "0.1.0",
-  "homepage": "https://Elkhan2003.github.io/test-react-single-page",
+  "homepage": "https://Elkhan2003.github.io/elcho-diploma",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",

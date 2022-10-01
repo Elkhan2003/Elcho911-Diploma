@@ -45,7 +45,7 @@ export const Header = () => {
 						bg="dark"
 						variant="dark">
 						<Container>
-							<Navbar.Brand href="https://elkhan2003.github.io/test-react-single-page/">
+							<Navbar.Brand href="https://elkhan2003.github.io/elcho-diploma/">
 								<img
 									alt="Elcho"
 									src={logo}
