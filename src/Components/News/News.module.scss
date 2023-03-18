@@ -1,0 +1,163 @@
+.cards {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.card {
+	margin: 0px 25px 30px 25px;
+}
+
+.boxImg {
+	position: relative;
+	font-family: Cuprum, Arial, Helvetica, sans-serif;
+	width: 500px;
+	height: 300px;
+	border: 5px outset #b7bab7;
+	border-radius: 10px;
+	overflow: hidden;
+
+	img {
+		height: 300px;
+		transition: 0.5s;
+	}
+
+	&:hover {
+		border: 5px inset #b7bab7;
+
+		img {
+			transform: rotate(-30deg) scale(2);
+			filter: blur(2px);
+		}
+
+		a {
+			&.bt {
+				opacity: 1;
+				transition: 0.5s;
+			}
+		}
+
+		.container {
+			&::before {
+				transform: translateX(92%) rotate(45deg) scale(2);
+				transition: 0.5s;
+				opacity: 0.6;
+			}
+
+			&::after {
+				transform: translateX(-25%) rotate(45deg) scale(2);
+				transition: 0.5s;
+				opacity: 0.6;
+			}
+		}
+
+		.text {
+			h1 {
+				transform: scale(1);
+			}
+
+			p {
+				transform: scale(1);
+				opacity: 1;
+			}
+		}
+	}
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	&:before {
+		transform: translateX(-125%) rotate(45deg);
+	}
+
+	&:after {
+		transform: translateX(195%) rotate(45deg);
+	}
+}
+
+.container:before,
+.container:after {
+	content: "";
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #1b70d5;
+	opacity: 0.1;
+	transition: 1s;
+}
+
+.text {
+	position: absolute;
+	top: 20%;
+	color: #ffffff;
+	text-align: center;
+	z-index: 10;
+
+	h1 {
+		margin-bottom: 20px;
+		font-size: 23px;
+		transform: scale(0);
+		transition: 0.5s;
+		font-weight: 700;
+	}
+
+	p {
+		font-size: 15px;
+		margin: 0 100px;
+		text-align: justify;
+		transform: scale(2);
+		transition: 0.5s;
+		opacity: 0;
+	}
+}
+
+a {
+	&.bt {
+		position: absolute;
+		top: 100%;
+		left: 37%;
+		color: #ffffff;
+		font-size: 13px;
+		text-decoration: none;
+		text-transform: uppercase;
+		border: 2px solid #ffffff;
+		padding: 10px 30px;
+		border-radius: 8px;
+		opacity: 0;
+		transition: 0.2s ease-in-out;
+		overflow: hidden;
+
+		&:before {
+			content: "";
+			position: absolute;
+			top: -8px;
+			left: -75px;
+			height: 50px;
+			width: 50px;
+			background: linear-gradient(
+				90deg,
+				rgba(255, 255, 255, 0.1),
+				rgba(255, 255, 255, 0.5)
+			);
+			transform: skewX(-45deg);
+		}
+
+		&:hover {
+			&::before {
+				left: 150px;
+				transition: 0.5s ease-in-out;
+			}
+		}
+
+		&:active {
+			border: 2px solid #b3b3b3;
+		}
+	}
+}
