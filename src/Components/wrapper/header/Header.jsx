@@ -15,7 +15,7 @@ export const Header = () => {
 		<>
 			<Navbar fixed="top" collapseOnSelect expand="md" bg="dark" variant="dark">
 				<Container>
-					<Navbar.Brand href="https://elkhan2003.github.io/elcho-diploma/">
+					<Navbar.Brand href="https://elcho911-diploma.netlify.app">
 						<img
 							alt="Elcho"
 							src={logo}
