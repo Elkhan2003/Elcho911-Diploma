@@ -2,25 +2,22 @@ import React, { useState, useEffect } from "react";
 import { Triangle } from "react-loader-spinner";
 import { Container } from "react-bootstrap";
 import scss from "./Pages.module.scss";
+import { MapGIS } from "../mapGIS/MapGIS.jsx";
 
 export const Map = () => {
-	const [site, setSite] = useState([]);
 	const [loading, setLoading] = useState(false);
 
 	useEffect(() => {
 		setLoading(true);
-		fetch("https://my-json-server.typicode.com/Elkhan2003/backend/maps")
-			.then((response) => response.json())
-			.then((json) => {
-				setSite(json);
-				setLoading(false);
-			});
+		setTimeout(() => {
+			setLoading(false);
+		}, 300);
 	}, []);
 
 	return (
 		<div className={scss.content}>
-			<Container>
-				{loading && (
+			{loading ? (
+				<>
 					<div className={scss.loading}>
 						<Triangle
 							height="200"
@@ -29,14 +26,16 @@ export const Map = () => {
 							ariaLabel="loading"
 						/>
 					</div>
-				)}
-
-				{site.map((el, id) => {
-					<div key={id} className={scss.sites__url}>
-						<iframe className={scss.site__url} src={el.url1}></iframe>
-					</div>;
-				})}
-			</Container>
+				</>
+			) : (
+				<>
+					<Container>
+						<div className={scss.map}>
+							<MapGIS />
+						</div>
+					</Container>
+				</>
+			)}
 		</div>
 	);
 };

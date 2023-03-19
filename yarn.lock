@@ -2,6 +2,20 @@
 # yarn lockfile v1
 
 
+"@2gis/mapgl-clusterer@^2.5.0":
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/@2gis/mapgl-clusterer/-/mapgl-clusterer-2.5.0.tgz#73051a41a095194cd282ca0b192696bbc9a8e68d"
+  integrity sha512-b+LNm6wGIHHUExylJnI5VPA4k70pEtOTfGsJcwCFXJDXPIUO5diMNlKBLV1IpsIbWsvk/fts1z/w+WgTOZN5kQ==
+  dependencies:
+    "@types/supercluster" "^5.0.2"
+
+"@2gis/mapgl@^1.34.1":
+  version "1.34.1"
+  resolved "https://registry.yarnpkg.com/@2gis/mapgl/-/mapgl-1.34.1.tgz#b571a176b6989c5df4c5628bc281b8eaadc3961e"
+  integrity sha512-bWyXpxlDK1zNpwoARRQ1BvoLbk5paDqt0mKyLXExSbO9rDV3lF1Yn4qkIf8UiZd/Joz4XnxxGiPKN8lCs9t/aA==
+  dependencies:
+    "@types/geojson" "^7946.0.7"
+
 "@babel/code-frame@^7.18.6":
   version "7.18.6"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.18.6.tgz#3b25d38c89600baa2dcc219edfa88a74eb2c427a"
@@ -441,6 +455,11 @@
   dependencies:
     tslib "^2.4.0"
 
+"@types/geojson@*", "@types/geojson@^7946.0.7":
+  version "7946.0.10"
+  resolved "https://registry.yarnpkg.com/@types/geojson/-/geojson-7946.0.10.tgz#6dfbf5ea17142f7f9a043809f1cd4c448cb68249"
+  integrity sha512-Nmh0K3iWQJzniTuPRcJn5hxXkfB1T1pgB89SBig5PlJQU5yocazeu4jATJlaA0GYFKWMqDdvYemoSnF2pXgLVA==
+
 "@types/prop-types@*":
   version "15.7.5"
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.5.tgz#5f19d2b85a98e9558036f6a3cacc8819420f05cf"
@@ -473,6 +492,13 @@
   version "0.16.2"
   resolved "https://registry.yarnpkg.com/@types/scheduler/-/scheduler-0.16.2.tgz#1a62f89525723dde24ba1b01b092bf5df8ad4d39"
   integrity sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==
+
+"@types/supercluster@^5.0.2":
+  version "5.0.3"
+  resolved "https://registry.yarnpkg.com/@types/supercluster/-/supercluster-5.0.3.tgz#aa03a77c6545265e63b50fa267ab12afe0c27658"
+  integrity sha512-XMSqQEr7YDuNtFwSgaHHOjsbi0ZGL62V9Js4CW45RBuRYlNWSW/KDqN+RFFE7HdHcGhJPtN0klKvw06r9Kg7rg==
+  dependencies:
+    "@types/geojson" "*"
 
 "@types/warning@^3.0.0":
   version "3.0.0"
