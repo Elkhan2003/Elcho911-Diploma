@@ -1,4 +1,4 @@
-import { CarouselBox } from "../Carousel/CarouselBox.jsx";
+import { CarouselBox } from "../carousel/CarouselBox.jsx";
 import { Card, Button, Container } from "react-bootstrap";
 import scss from "./Pages.module.scss";
 

@@ -1,9 +1,9 @@
 import { Container } from "react-bootstrap";
-import { Test_1 } from "../Test/Test_1.jsx";
-import { Test_2 } from "../Test/Test_2.jsx";
-import { Test_3 } from "../Test/Test_3.jsx";
-import { Test_4 } from "../Test/Test_4.jsx";
-import { Test_5 } from "../Test/Test_5.jsx";
+import { Test_1 } from "../test/Test_1.jsx";
+import { Test_2 } from "../test/Test_2.jsx";
+import { Test_3 } from "../test/Test_3.jsx";
+import { Test_4 } from "../test/Test_4.jsx";
+import { Test_5 } from "../test/Test_5.jsx";
 import css from "./Pages.module.scss";
 
 export const Test = () => {

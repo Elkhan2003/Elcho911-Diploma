@@ -35,7 +35,7 @@ function OffCanvasExample({ name, ...props }) {
 	const handleClose = () => setShow(false);
 	const toggleShow = () => setShow((s) => !s);
 
-	// ! Test logic
+	// ! test logic
 	const questions = [
 		{
 			questionText: "Язык программирования Pascal создал:",
@@ -168,7 +168,7 @@ function OffCanvasExample({ name, ...props }) {
 			setShowScore(true);
 		}
 	};
-	// ! Test logic
+	// ! test logic
 
 	return (
 		<>

@@ -1,13 +1,13 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import { Home } from "../../Pages/Home.jsx";
-import { Blog } from "../../Pages/Blog.jsx";
-import { About } from "../../Pages/About.jsx";
-import { Compiler } from "../../Pages/Compiler.jsx";
-import { Test } from "../../Pages/Test.jsx";
-import { Contacts } from "../../Pages/Contacts.jsx";
-import { Map } from "../../Pages/Map.jsx";
-import { Something } from "../../Pages/Something.jsx";
+import { Home } from "../../pages/Home.jsx";
+import { Blog } from "../../pages/Blog.jsx";
+import { About } from "../../pages/About.jsx";
+import { Compiler } from "../../pages/Compiler.jsx";
+import { Test } from "../../pages/Test.jsx";
+import { Contacts } from "../../pages/Contacts.jsx";
+import { Map } from "../../pages/Map.jsx";
+import { Something } from "../../pages/Something.jsx";
 
 export const Main = () => {
 	return (
