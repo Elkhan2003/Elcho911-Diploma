@@ -68,7 +68,7 @@ export const App = () => {
 									/>
 									<a
 										className="load__url"
-										href="https://elkhan2003.github.io/elcho-diploma/"
+										href="https://elcho911-diploma.netlify.app/"
 									>
 										<span className="loading__color">
 											Пожалуйста подождите...
